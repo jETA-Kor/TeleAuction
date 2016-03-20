@@ -1,0 +1,34 @@
+@import url('../font/nanumbarungothic/v1/nanumbarungothic.css');
+@import url('../font/nanumpenscript/nanumpenscript.css');
+
+html, body { margin: 0px; padding: 0px; font-family: 'Nanum Barun Gothic'; background-color: #FBFBFB; }
+body { width: 960px; margin: auto; }
+button { font-family: 'Nanum Barun Gothic'; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0px; background-color: #4285F4; color: #FFFFFF; border: 0px; width: 120px; height: 40px; }
+a { color: inherit; text-decoration: inherit; }
+
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt30 { margin-top: 30px !important; }
+.mt40 { margin-top: 40px !important; }
+.mt50 { margin-top: 50px !important; }
+
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb40 { margin-bottom: 40px !important; }
+.mb50 { margin-bottom: 50px !important; }
+
+.pt10 { padding-top: 10px !important; }
+.pt20 { padding-top: 20px !important; }
+.pt30 { padding-top: 30px !important; }
+.pt40 { padding-top: 40px !important; }
+.pt50 { padding-top: 50px !important; }
+
+.pb10 { padding-bottom: 10px !important; }
+.pb20 { padding-bottom: 20px !important; }
+.pb30 { padding-bottom: 30px !important; }
+.pb40 { padding-bottom: 40px !important; }
+.pb50 { padding-bottom: 50px !important; }
+
+.fr { float: right !important; }
+.fl { float: left !important; }
