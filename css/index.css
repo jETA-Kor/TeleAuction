@@ -11,6 +11,12 @@ body { text-align: center; }
     border-radius: 10px;
     
     overflow: hidden;
+    cursor: default;
+}
+
+.mainSection:hover {
+    border: 1px solid #4285F4;
+    color: #4285F4;
 }
 
 .fl, .fr {
@@ -25,6 +31,8 @@ body { text-align: center; }
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+
+#regist:hover { cursor: pointer; }
 
 #regist .fr {
     background-image: url(../images/sellingProducts.png);

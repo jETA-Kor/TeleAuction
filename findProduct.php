@@ -18,6 +18,7 @@
                 <img id="thumb3" />
             </div>
             <article>
+                DESC
             </article>
         </section>
         <footer>
