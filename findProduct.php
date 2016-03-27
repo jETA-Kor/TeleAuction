@@ -14,6 +14,11 @@
             
             $(document).ready(function() {
                 $("#productDesc").html(converter.makeHtml($("#productDescSrc").val()));
+                
+                $("#productImg img.thumbnail").mouseenter(function(e) {
+                    var img = $(this).css("background-image");
+                    $("#bigImg").css("background-image", img);
+                });
             });
         </script>
     </head>
@@ -27,9 +32,9 @@
         <section>
             <div id="productImg">
                 <img id="bigImg" style="background-image: url('upload/sample1.jpg')" />
-                <img id="thumb1" style="background-image: url('upload/sample1.jpg')" />
-                <img id="thumb2" style="background-image: url('upload/sample2.jpg')" />
-                <img id="thumb3" style="background-image: url('upload/sample3.jpg')" />
+                <img id="thumb1" class="thumbnail" style="background-image: url('upload/sample1.jpg')" />
+                <img id="thumb2" class="thumbnail" style="background-image: url('upload/sample2.jpg')" />
+                <img id="thumb3" class="thumbnail" style="background-image: url('upload/sample3.jpg')" />
             </div>
             <article id="productDesc"></article>
             <textarea id="productDescSrc" style="display: none;">
