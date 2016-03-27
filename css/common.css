@@ -1,9 +1,20 @@
 @import url('../font/nanumbarungothic/v1/nanumbarungothic.css');
 @import url('../font/nanumpenscript/nanumpenscript.css');
 
+@keyframes findForm_focus {
+    from { width: 100px; }
+    to { width: 300px; }
+}
+
+@keyframes findForm_blur {
+    from { width: 300px; }
+    to { width: 100px; }
+}
+
 html, body { margin: 0px; padding: 0px; font-family: 'Nanum Barun Gothic'; background-color: #FBFBFB; }
 body { width: 960px; margin: auto; }
 button { font-family: 'Nanum Barun Gothic'; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0px; background-color: #4285F4; color: #FFFFFF; border: 0px; width: 120px; height: 40px; }
+input[type=text] { -webkit-appearance: none; -moz-appearance: none; appearance: none; border: 1px solid #CCCCCC; }
 a { color: inherit; text-decoration: inherit; }
 
 .mt10 { margin-top: 10px !important; }
@@ -32,3 +43,26 @@ a { color: inherit; text-decoration: inherit; }
 
 .fr { float: right !important; }
 .fl { float: left !important; }
+
+header, footer {
+    position: fixed;
+    left: 0px;
+    
+    width: 100%;
+    line-height: 50px;
+}
+
+header { top: 0px; background-color: RGBA(255, 255, 255, 0.7); height: 50px; }
+footer { bottom: 0px; background-color: RGBA(30, 30, 30, 0.7); color: #FFFFFF; height: 100px; }
+
+.fixedWrap {
+    width: 960px;
+    margin: auto;
+}
+
+header #findForm { font-size: 12px; float: right; width: 100px; height: 28px; margin: 10px 0px; text-indent: 5px; animation-name: findForm_blur; animation-duration: 0.5s;}
+header #findForm:focus { animation-name: findForm_focus; animation-duration: 1s; width: 300px; }
+
+section { overflow: hidden; word-wrap: break-word; text-overflow: ellipsis; }
+section:nth-of-type(1) { margin-top: 50px; }
+section:nth-last-of-type(1) { margin-bottom: 100px; }

@@ -1,0 +1,72 @@
+@keyframes thumbnail {
+    0% { background-position: center top; }
+    50% { background-position: center bottom; }
+    100% { background-position: center top; }
+}
+
+@keyframes biddingPrice_focus {
+    from { background-color: transparent; }
+    to { background-color: #FFFFFF; }
+}
+
+@keyframes biddingPrice_blur {
+    from { background-color: #FFFFFF; }
+    to { background-color: transparent; }
+}
+
+#productImg { line-height: 0px; }
+
+#productImg img { border: 0px; padding: 0px; margin: 0px; }
+
+#productImg #bigImg {
+    width: 690px;
+    height: 480px;
+    
+    background-size: cover;
+    
+    float: left;
+}
+
+#productImg #bigImg:hover {
+    animation-name: thumbnail;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#productImg #thumb1, #productImg #thumb2, #productImg #thumb3 {
+    width: 260px;
+    height: 153px;
+    
+    background-size: cover;
+    background-position: center center;
+    
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+footer #currentInfo, footer #biddingArea{ clear: both; }
+footer #currentInfo { font-size: 13px; line-height: 30px; }
+footer #biddingArea { line-height: 70px; }
+footer #biddingArea #biddingPrice {
+    font-size: 20px;
+    
+    width: 300px;
+    height: 36px;
+    
+    background-color: transparent;
+    color: #FFFFFF;
+    
+    text-indent: 10px;
+    
+    border: 2px solid #FFFFFF;
+    
+    animation-name: biddingPrice_blur;
+    animation-duration: 0.5s;
+}
+footer #biddingArea #biddingPrice:focus {
+    background-color: #FFFFFF;
+    color: #000000;
+    
+    animation-name: biddingPrice_focus;
+    animation-duration: 1s;
+}
