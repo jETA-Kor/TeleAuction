@@ -25,7 +25,7 @@
         </section>
         <footer>
             <div class="fixedWrap">
-                <div class="fr"><button>등록하기</button></div>
+                <div class="fr"><button>상품 등록</button></div>
             </div>
         </footer>
     </body>

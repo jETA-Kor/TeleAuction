@@ -23,6 +23,7 @@
     height: 480px;
     
     background-size: cover;
+    background-position: center top;
     
     float: left;
 }

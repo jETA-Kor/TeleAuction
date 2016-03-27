@@ -9,22 +9,23 @@
         
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
         <script type="text/javascript">
             $("document").ready(function() {
                 $("#regist").mouseenter(function() {
-                    $("#regist .fr").stop().animate({"background-size": "115px"}, 100);
+                    $("#regist .fr").stop().velocity({"background-size": "115px"}, 100);
                 });
                 $("#regist").mouseleave(function() {
-                    $("#regist .fr").stop().animate({"background-size": "100px"}, 100);
+                    $("#regist .fr").stop().velocity({"background-size": "100px"}, 100);
                 });
                 
                 $("#purchase").mouseenter(function() {
-                    $("#findForm").stop().animate({"margin-left": 0}, 300, function() {
+                    $("#findForm").stop().velocity({"margin-left": 0}, 300, function() {
                         $("#codeToFind").removeAttr("disabled").focus();
                     });
                 });
                 $("#purchase").mouseleave(function() {
-                    $("#findForm").stop().animate({"margin-left": "100%"}, 300);
+                    $("#findForm").stop().velocity({"margin-left": "100%"}, 300);
                     $("#codeToFind").attr("disabled", "disabled");
                 });
                 
