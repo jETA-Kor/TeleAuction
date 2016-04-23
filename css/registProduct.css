@@ -1,2 +1,45 @@
+#productInfoForm input { height: 28px; line-height: 28px; margin: 5px 0px; text-indent: 10px; }
+#productInfoForm input[type=number], #productInfoForm input[type=date] { width: 150px; }
+#productInfoForm label { display: inline-block; width: 100px; text-align: right; margin: 0 5px 0 0; }
+
+#productInfoForm #imageWrap #fakeupload {
+    width: calc(100% - 2px);
+    height: 50px;
+    border: 1px dashed #CCCCCC;
+    border-radius: 10px;
+    line-height: 50px;
+    color: #CCCCCC;
+    text-align: center;
+    font-size: 12px;
+}
+
+#productInfoForm #imageWrap #fakeupload.selected { color: #4285F4; border-color: #4285F4; }
+
+#productInfoForm #imageWrap #imageupload {
+    width: calc(100% - 2px);
+    height: 50px;
+    border-radius: 10px;
+    margin-top: -51px;
+    display: block;
+    opacity: 0;
+}
+
+#productInfoForm #titleWrap #title { width: calc(100% - 109px); }
+
+#productInfoForm #productDescWrap #productDesc, #productInfoForm #productDescWrap #productDescPreview {
+    display: inline-block;
+    
+    height: 300px;
+    
+    margin: 20px 0px;
+    padding: 10px;
+    
+    border: 1px solid #CCCCCC;
+}
+#productInfoForm #productDescWrap #productDesc { float: left; width: calc(50% - 22px); border-right: 0px; resize: none; }
+#productInfoForm #productDescWrap #productDescPreview { width: calc(50% - 21px); overflow: scroll; }
+
 footer #currentInfo { font-size: 13px; line-height: 30px; }
 footer { height: 70px; line-height: 70px; }
+
+.hasTrouble { border-color: #FC4937 !important; color: #FC4937 !important; }

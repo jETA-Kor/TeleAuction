@@ -251,7 +251,7 @@ You can also use other markdown syntax inside them.
                     <div class="fr"><span id="timeRemains"></span>1시간 23분 40초 남음</div>
                 </div>
                 <div id="biddingArea">
-                    <div class="fl"><input id="biddingPrice" type="text" placeholder="입찰 가격을 입력하세요." /></div>
+                    <div class="fl"><input id="biddingPrice" type="number" lang="nb" step="100" placeholder="입찰 가격을 입력하세요." /></div>
                     <div class="fr"><button>입찰</button></div>
                 </div>
             </div>
