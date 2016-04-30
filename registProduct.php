@@ -67,19 +67,24 @@
                     
                     $("#fakeupload").removeClass("hasTrouble");
                 });
+                
+                $("input[type=date]").change(function(event) {
+                    try {
+                        var tmp = new Date(event.target.value.replace(/\./gi, "-"));
+                        if(tmp.toDateString() == "Invalid Date") throw new Exception();
+                        
+                        var year = tmp.getFullYear();
+                        var month = (tmp.getMonth() < 9 ? "0" + (tmp.getMonth() + 1) : tmp.getMonth() + 1);
+                        var date = (tmp.getDate() < 10 ? "0" + tmp.getDate() : tmp.getDate());
+                        
+                        event.target.value = year + "-" + month + "-" + date;
+                        
+                        event.target.classList.remove("hasTrouble");
+                    } catch(e) {
+                        event.target.classList.add("hasTrouble");
+                    }
+                });
             });
-            
-            function formDateField(obj) {
-               try {
-                   var tmp = new Date(obj.val());
-                   var year = tmp.getFullYear();
-                   var month = tmp.
-
-                   $("#startdate").val(tmp.getFullYear + "-" + (tmp.getMonth() + 1)
-               } catch(e) {
-
-               }
-            }
         </script>
     </head>
     <body>
